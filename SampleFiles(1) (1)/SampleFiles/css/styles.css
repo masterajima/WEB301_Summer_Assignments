@@ -1,0 +1,133 @@
+html, body{
+    margin: 18px;
+    padding: 4px 4px ;
+}
+div.float-container{
+    font-size: 12px;
+    width: 100%;
+    background: linear-gradient(rgb(160, 214, 245),rgb(245, 239, 173));
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* important */
+    display: flex;
+    /* important */
+    align-items: center;
+    justify-content: space-around;
+    border: 3px solid #fff;
+}
+.float-child{
+  width: 100px;;
+  float:left;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px 100px;
+border:2px solid red;
+}
+/*div#content-interest{
+    font-size:12px;
+    width: 100%;
+  background: white;
+  color: grey;
+  margin: 0 .5em;
+  padding: 20px;
+  
+  min-height: 100%;
+}*/
+/*div.content-language{
+    font-size:12px;
+    width: 100%;
+  background: white;
+  color: grey;
+  margin: 0 .5em;
+  padding: .5em;
+  
+  min-height: 100%;
+}
+div#shows{
+    font-size: 12px;
+    width: 100%;
+  background: white;
+  color: grey;
+  margin: 0 .5em;
+  padding: .5em;
+
+  min-height: 100%;
+}*/
+@media screen and (max-width: 992px) {
+  .float-child {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .float-child {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .float-child{
+    font-size: 16px;
+  }
+}
+*{
+  box-sizing: border-box;
+}
+.topnav {
+  overflow: hidden;
+  background-color: rgb(232, 175, 175);
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+/* Media query for column */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+footer {
+  margin-top: auto;
+  width: 100%;
+  background-color: rgb(237, 201, 201);
+  text-align: center;
+  position: relative;
+  top: 100px;
+}
+.footer {
+  margin: 16px;
+  padding: 16px;
+}
+@media screen and (max-width: 800px) {
+  .topnav > a{font-size:0px;}
+  .topnav> a:hover{font-size:0px;}
+  .topnav> a span{font-size:20px!important;}
+}
+
