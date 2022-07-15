@@ -1,7 +1,7 @@
 /*
-  Your name here
+  Ajima Master
 */
-add a click event handler for the first button
+/*add a click event handler for the first button*/
 $('document').ready(function(){
   $('#position').on('click',getLocation)
 function getLocation(){
