@@ -7,6 +7,7 @@ html, body{
         position:relative;
         color:white;
         width:100%;
+        background-color: rgb(0, 255, 89);
         }
     }
     /*when browser size is less than 700*/
@@ -14,6 +15,8 @@ html, body{
         input::placeholder{
             position:relative;
             color:black;
+            background-color: rgb(172, 127, 255);
+            font-size:0cm;
             
             }
         }
