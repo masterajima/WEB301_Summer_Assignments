@@ -43,3 +43,20 @@ function showError(error) {
      
     
 }
+
+//display message that form submitted successfully
+$('#submit').on('click',function(){
+localStorage.setItem('lastname','Master');
+localStorage.lastname='Master';
+localStorage.setItem('firstname','Ajima');
+localStorage.firstname='Ajima';
+localStorage.setItem('lattitude','56.1304 N');
+localStorage.latitude='56.1304 N';
+localStorage.setItem('longitude','56.1304 N');
+localStorage.latitude='56.1304 N';
+$('#succsess').text("<h1>Value has been submitted successfully</h1>");
+
+
+
+});
+
