@@ -20,3 +20,26 @@ function getLocation(){
      }
     
   });
+
+function showError(error) {
+    if(error.code==PERMISSION_DENIED) {
+    
+        document.getElementById('#error').innerHTML = "User denied the request for Geolocation."
+        
+    }
+    else if(navigator.geolocation==true){
+     
+      //if user give permission show current position
+      showPosition();
+      //add latitude value to input tag
+      
+      let lattitude=$('#latitude').val;
+      $('#latitude').append(lattitude);
+      //
+
+      let longitude=$('#longitude').val;
+      $('#longitude').append(longitude);
+    }
+     
+    
+}
