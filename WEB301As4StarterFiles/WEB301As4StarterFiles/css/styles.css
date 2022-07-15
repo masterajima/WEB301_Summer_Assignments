@@ -2,3 +2,18 @@ html, body{
     margin: 0;
     padding: 0;
 }
+@media only screen and (max-width: 700px) {
+    input::placeholder{
+        position:relative;
+        color:white;
+        width:100%;
+        }
+    }
+    /*when browser size is less than 700*/
+    @media only screen and (min-width: 700px) {
+        input::placeholder{
+            position:relative;
+            color:black;
+            
+            }
+        }
